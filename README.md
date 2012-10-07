@@ -10,4 +10,5 @@ Usage
 
 Open a project in Brackets, place your cursor on a line and and select ```Delete Line``` form the ```Edit``` menu.
 
-Alternatively, use `CTRL`+`K` on Windows, or `⌘`+`K` on Mac OS X to delete the current line.
+Alternatively, use `ctrl`+`K` on Windows, or `⌘`+`K` on Mac OS X to delete the current line.
+For easy editing with one hand, `ctrl`+`shift`+`X` on Windows, or `⌘`+`shift`+`X` on Mac OS X are also enabled.
