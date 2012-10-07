@@ -1,3 +1,13 @@
+/**
+ * Keyboard shortcuts extension for Adobe Brackets text editor
+ * 
+ * Copyright (C) 2012 Raja Kapur
+ * This code is licensed under the MIT license
+ * 
+ * @author Raja Kapur <raja.kapur@gmail.com>
+ * @link https://github.com/aonic/editor-shortcuts
+ */
+
 /** extension to add various keyboard shortcuts for text editing */
 define(function (require, exports, module) {
     'use strict';
