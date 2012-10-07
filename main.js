@@ -24,7 +24,7 @@ define(function (require, exports, module) {
 
         sel.start.ch = 0;
         sel.end = {line: sel.start.line + 1, ch: 0};
-        doc.replaceRange("", sel.start, sel.end);
+        editor.document.replaceRange("", sel.start, sel.end);
     }
 
     CommandManager.register(MENU_NAME, COMMAND_ID, deleteLine);
