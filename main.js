@@ -9,16 +9,6 @@ define(function (require, exports, module) {
 
     var COMMAND_ID  = "editorShortcuts.deleteLine";
     var MENU_NAME   = "Delete Line";
-
-    function insert(input) {            
-        var editor = EditorManager.getCurrentFullEditor();
-        var pos    = editor.getCursorPos();
-        pos.ch = 0;       
- 
-        editor._codeMirror.replaceRange(input, pos);
-
-        EditorManager.focusEditor();
-    }
     
     /**
      * Deletes the current line
