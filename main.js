@@ -19,11 +19,16 @@ define(function (require, exports, module) {
             return;
         }
 
-        var sel       = editor.getSelection(),
-            delimiter = "";
+        var sel = editor.getSelection(),
+            hasSelection = (sel.start.line !== sel.end.line) || (sel.start.ch !== sel.end.ch);
 
         sel.start.ch = 0;
-        sel.end      = {line: sel.start.line + 1, ch: 0};
+        if (!hasSelection) {
+            sel.end = {line: sel.start.line + 1, ch: 0};
+        }
+        else {
+            sel.end = {line: sel.end.line + 1, ch: 0};
+        }
         
         editor.document.replaceRange("", sel.start, sel.end);
     }
