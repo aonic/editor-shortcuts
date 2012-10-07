@@ -24,14 +24,6 @@ define(function (require, exports, module) {
 
         sel.start.ch = 0;
         sel.end = {line: sel.start.line + 1, ch: 0};
-        if (sel.end.line === editor.lineCount()) {
-            delimiter = "\n";
-        }
-
-        // Make the edit
-        var doc = editor.document;
-
-        var selectedText = doc.getRange(sel.start, sel.end) + delimiter;
         doc.replaceRange("", sel.start, sel.end);
     }
 
