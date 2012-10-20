@@ -5,6 +5,8 @@ A brackets extension to add various keyboard shortcuts for text editing. Current
 
 To install, place the ```editor-shortcuts``` folder inside the ```brackets/src/extensions/user``` folder.
 
+** NO longer needed as Sprint 15 has this built-in **
+
 Usage
 =====
 
